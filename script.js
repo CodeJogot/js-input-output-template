@@ -1,10 +1,15 @@
 document.getElementById('process-btn').addEventListener('click', function() {
     const input = document.getElementById('input').value;
-    const output = processInput(input);
+    const output = mainFunction(input);
     document.getElementById('output').textContent = output;
 });
 
-function processInput(input) {
+document.getElementById('clear-btn').addEventListener('click', function() {
+    document.getElementById('input').value = ''; // Clear input
+    document.getElementById('output').textContent = ''; // Clear output
+});
+
+function mainFunction(input) {
     let p = input.split('\n');
-    return p[0];
+    return ;
 }
